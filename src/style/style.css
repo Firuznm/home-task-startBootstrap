@@ -1,0 +1,398 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Merriweather Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.btn{
+	padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10rem;
+	font-weight: 800;
+}
+.line{
+	height: 3px;
+    width: 70px;
+	border-radius: 5px;
+	border: none;
+	margin: 2rem auto;
+}
+/* ----------section main header style start -------- */
+#header-main{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../images/bg-masthead.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+header{
+	width: 100%;
+    background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+}
+
+header a{
+	color: rgba(255, 255, 255, 0.7);
+	padding: 0 1.2rem;
+	cursor: pointer;
+	font-size: 1.3rem;
+	font-weight: 600;
+	transition: .3s;
+}
+header a:hover{
+	color: rgba(255, 255, 255, 1);
+}
+
+.changeNavColor{
+	background-color: white;
+}
+.changeNavColor a{
+	color: black;
+}
+.changeNavColor nav a:hover{
+	color:rgb(194, 167, 167)
+}
+
+nav{
+	height: 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.page-list-mobile{
+	display: none;
+}
+nav ul{
+	display: flex;
+}
+.menu{
+	display: none;
+	border: 1px solid yellow;
+}
+.hamburger-menu{
+	width: 2.5rem;
+	border: 1px solid red;
+}
+.close-menu{
+	width: 2.5rem;
+	border: 1px solid blue;
+}
+.overlay{
+	height: 100vh;
+	width: 55%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.line-header{
+    background-color: #f4623a;
+}
+.overlay h2{
+	font-size: 3.5rem;
+	font-weight: 400;
+	line-height: 3.5rem;
+	text-align: center;
+}
+.overlay p{
+	font-size: 1.15rem;
+	line-height: 1.7rem;
+	color: rgba(255, 255, 255, 0.75)
+}
+a.btn-coral{
+	margin-top: 2.5rem;
+	background-color: #f4623a;
+	color: #fff;
+
+}
+a.btn-coral:hover{
+	background-color: #cf5331;
+}
+/* ----------section about style start -------- */
+#about{
+	width: 100%;
+	background-color: #f4623a;
+	color: white;
+}
+.about-description{
+	text-align: center;
+	padding: 10rem 20rem;
+}
+.about-description h2{
+	font-size: 2rem;
+}
+.line-about{
+	background-color: white;
+}
+.about-description p{
+	margin-bottom: 4rem;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	font-weight: 200;
+	color: rgba(255, 255, 255, 0.75)
+}
+.btn-white{
+	background-color: white;
+	color: black;
+}
+.btn-white:hover{
+	background-color: #d3d4d5;
+}
+/* ----------section service style start -------- */
+#service{
+	padding: 7rem 0;
+	text-align: center;
+}
+#service h2{
+	font-size: 2rem;
+	font-weight: 400; 
+}
+.line-service{
+	background-color: #f4623a;
+}
+.service-description{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	justify-content: center;
+	justify-items: center;
+	gap: 3rem;
+}
+.service-description h6{
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin: 1rem auto;
+}
+.service-description p{
+	font-size: 1rem;
+	line-height: 1.4rem; 
+	color:#6c757d;
+}
+/* portfolio section start */
+#portfolio{
+padding-top: 4rem;
+}
+.site-portfolio{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    justify-content: center;
+	justify-items: center;
+}
+.portfolio{
+	position: relative;
+	cursor: pointer;
+	transition:  0.7s ease;
+}
+.portfolio:hover .overlay{
+	opacity: .8;
+}
+.portfolio img{
+	width: 100%;
+	object-fit: cover;
+	aspect-ratio: 4/2;
+}
+.portfolio .overlay{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin: auto;
+	background-color:#c34e2e;
+	opacity: 0;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.portfolio .overlay h6{
+	font-size: 1.4rem;
+}
+
+.download{
+	background-color: black;
+    text-align: center;
+    margin: auto;
+	padding: 5rem 0;
+}
+.download h2{
+	color: white;
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 2.5rem;
+}
+/* contact section start */
+#contact{
+   padding: 2rem 0;
+}
+.form-group{
+	text-align: center;
+}
+.form-group h2{
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+.form-group .line{
+	background-color: #f4623a;
+}
+.form-group h6{
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	font-weight: 200;
+	color:#6c757d;
+	margin-bottom: 2rem;
+	padding: 0 5rem;
+}
+form{
+	width: 50%;
+	margin: 0 auto;
+}
+form input, textarea{ 
+	display: block;
+	width: 100%;
+	padding: 1rem .7rem;
+	font-size: 1rem;
+	margin: 1rem 0;
+	border-radius: 7px;
+}
+form button{
+	width: 100%;
+	background-color: #c34e2e;
+	color: white;
+	border-radius: 25px;
+	padding: 1.5rem 0;
+	border: none;
+	cursor: pointer; 
+	margin-bottom: 3rem; 
+}
+.form-group span{
+	display: block;
+}
+/* footer section style start */
+#footer{
+	width: 100%;
+	height: 7rem;
+	background-color: rgb(248, 249, 250);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#footer h5{
+	color: #6c757d;
+}
+
+
+/* responsive style start 1024 */
+@media only screen and (max-width: 920px) {
+   /* ----------section main header style start -------- */
+.container{
+	width: 95%;
+}
+header{
+    background-color: white;
+}
+
+header a{
+	color: black;
+}
+header a:hover{
+	color: black;
+}
+
+.changeNavColor nav a:hover{
+	color: black;
+}
+
+.page-list-web{
+	display: none;
+}
+
+.page-list-mobile{
+	display: block;
+	background-color: white;
+	position: absolute;
+	top: 3.3rem;
+	width: 100%;
+   padding: 1.5rem;
+}
+.menu{
+	width: 2.5rem;
+	display: block;
+	color: black;
+}
+.close-menu{
+	display: none;
+}
+.active{
+	display: none;
+}
+.noactive{
+	display: block;
+}
+
+.overlay{
+	width: 95%;
+}
+.overlay h2{
+	font-size: 2rem;
+	line-height: 2rem;
+	text-align: justify;
+}
+.overlay p{
+	text-align: justify;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+a.btn-coral{
+	margin-top: 1.5rem;
+}
+a.btn-coral:hover{
+	background-color: #cf5331;
+}
+.about-description{
+	text-align: center;
+	padding: 3rem 1rem;
+}
+.btn-white:hover{
+	background-color:white;
+}
+#portfolio{
+padding-top: 2rem;
+}
+.site-portfolio{
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+.download h2{
+	font-size: 1.2rem;
+}
+#contact{
+   text-align: center;
+}
+.form-group h2{
+	font-size: 2rem;
+}
+form{
+     width: 80%;
+}
+
+  }
